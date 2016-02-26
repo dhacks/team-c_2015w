@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.6"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="イベント名；"
+                android:id="@+id/textView"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_eventname_event_dialog_top"
+                android:layout_weight="0.9"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:text="as"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="開始時間："
+                android:id="@+id/textView9"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.2"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_time_event_dialog_top"
+                android:layout_weight="0.60"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="場所："
+                android:id="@+id/textView6"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.34"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_place_event_dialog_top"
+                android:layout_weight="0.65"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05">
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="38dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="詳細："
+                android:id="@+id/textView2"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center|left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="New Text"
+                android:id="@+id/editText_detail_event_dialog_top" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

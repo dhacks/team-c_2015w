@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/kensakutopbar"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#993399"
+                    android:layout_weight="0.1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1">
+
+                <Spinner
+                    android:layout_width="110dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/spinner_field_search"
+                    android:layout_gravity="center"
+                    android:spinnerMode="dialog"
+                    android:layout_weight="0.15" />
+
+                <Spinner
+                    android:layout_width="150dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/spinner_school_search"
+                    android:layout_gravity="center"
+                    android:spinnerMode="dialog"
+                    android:layout_weight="0.2" />
+
+                <ImageButton
+                    android:layout_width="65dp"
+                    android:layout_height="75dp"
+                    android:text="探す"
+                    android:id="@+id/bt_searchtitle_search"
+                    android:background="#993399"
+                    android:layout_gravity="center"
+                    android:src="@drawable/search"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="0.05" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="222dp"
+                android:layout_weight="0.6">
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gridView_title_search"
+                    android:layout_weight="0.6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:layout_width="82dp"
+                    android:layout_height="80dp"
+                    android:text="カレンダー"
+                    android:id="@+id/bt_calendar_search"
+                    android:layout_gravity="center"
+                    android:background="#993399"
+                    android:src="@drawable/calender"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="0.25"
+                    android:layout_margin="0.05dp" />
+
+                <ImageButton
+                    android:layout_width="82dp"
+                    android:layout_height="80dp"
+                    android:text="お気に入り"
+                    android:id="@+id/bt_favorite_search"
+                    android:layout_gravity="center"
+                    android:background="#993399"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/okiniiri"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="0.25"
+                    android:layout_margin="0.05dp" />
+
+                <ImageButton
+                    android:layout_width="82dp"
+                    android:layout_height="80dp"
+                    android:text="検索"
+                    android:id="@+id/bt_search_search"
+                    android:layout_gravity="center"
+                    android:background="#993399"
+                    android:src="@drawable/search"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="0.25"
+                    android:layout_margin="0.05dp" />
+
+                <ImageButton
+                    android:layout_width="82dp"
+                    android:layout_height="80dp"
+                    android:text="設定"
+                    android:id="@+id/bt_setting_search"
+                    android:layout_gravity="center"
+                    android:background="#993399"
+                    android:src="@drawable/setting"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="0.25"
+                    android:layout_margin="0.05dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>

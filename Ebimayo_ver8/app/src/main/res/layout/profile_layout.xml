@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="New Text"
+            android:id="@+id/textView_title_profile"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="40dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.3">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/abc_btn_radio_to_on_mtrl_015"
+            android:layout_weight="0.5"
+            android:id="@+id/imageView_profile"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView_introduction_profile"
+            android:layout_weight="0.5"
+            android:text="introduction"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView_link_profile"
+            android:layout_gravity="center_horizontal"
+            android:text="twitter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bt_mail_profile"
+            android:src="@drawable/ic_menu_compose"
+            android:layout_weight="0.9" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bt_favoritetitle_profile"
+            android:layout_weight="0.1"
+            android:src="@drawable/abc_btn_rating_star_off_mtrl_alpha"
+            android:checked="false"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:weightSum="1" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/abc_ic_menu_paste_mtrl_am_alpha"
+            android:layout_weight="0.20"
+            android:id="@+id/bt_calendar_profile" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bt_search_profile"
+            android:layout_weight="0.2"
+            android:src="@drawable/abc_ic_search_api_mtrl_alpha" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bt_favorite_profile"
+            android:src="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+            android:layout_weight="0.2" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bt_response_profile"
+            android:src="@drawable/abc_ic_menu_selectall_mtrl_alpha"
+            android:layout_weight="0.2" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bt_setting_profile"
+            android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+</LinearLayout>

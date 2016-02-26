@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.6">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="イベント名"
+                android:id="@+id/textView"
+                android:textSize="20dp"
+                android:layout_gravity="center" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="New Text"
+                android:id="@+id/editText_eventname_event"
+                android:layout_gravity="center"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1"
+            android:weightSum="1">
+
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+                android:id="@+id/spinner_month_event"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="月"
+                android:id="@+id/textView4"
+                android:textSize="20dp"
+                android:layout_gravity="center" />
+
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+                android:id="@+id/spinner_day_event"
+                android:layout_weight="0"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="日"
+                android:id="@+id/textView5"
+                android:textSize="20dp"
+                android:layout_gravity="center" />
+
+            <Spinner
+                android:layout_width="100dp"
+                android:layout_height="65dp"
+                android:id="@+id/spinner_time_event"
+                android:layout_weight="0"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="から"
+                android:id="@+id/textView3"
+                android:textSize="20dp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.14">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="場所"
+                    android:id="@+id/textView6"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.44" />
+
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/editText_place_event" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="38dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="詳細"
+                android:id="@+id/textView2"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:layout_width="353dp"
+                android:layout_height="165dp"
+                android:id="@+id/editText_detail_event" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完了"
+                android:id="@+id/bt_complete_provider"
+                android:layout_gravity="center_horizontal"
+                android:background="#993399"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

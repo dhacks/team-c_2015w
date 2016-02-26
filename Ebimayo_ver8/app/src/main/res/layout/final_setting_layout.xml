@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.26">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/settingtopbar"
+                android:layout_gravity="center_horizontal"
+                android:background="#993399" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:layout_weight="0.665">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.1"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/bt_guide_setting"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="ヘルプ"
+                    android:textSize="25dp"
+                    android:textColor="#ffffff"
+                    android:background="#bf3fbf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.06"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/bt_login_setting"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="サークルログイン"
+                    android:textSize="25dp"
+                    android:textColor="#ffffff"
+                    android:background="#bf3fbf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.06"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/bt_top_setting"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="トップに戻る"
+                    android:textSize="25dp"
+                    android:textColor="#ffffff"
+                    android:background="#bf3fbf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.06"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/bt_info_setting"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="このアプリについて"
+                    android:textSize="25dp"
+                    android:textColor="#ffffff"
+                    android:background="#bf3fbf" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="カレンダー"
+                android:id="@+id/bt_calender_setting"
+                android:layout_gravity="center"
+                android:background="#993399"
+                android:src="@drawable/calender"
+                android:scaleType="fitCenter"
+                android:layout_weight="0.25"
+                android:layout_margin="0.05dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="お気に入り"
+                android:id="@+id/bt_favorite_setting"
+                android:layout_gravity="center"
+                android:background="#993399"
+                android:adjustViewBounds="false"
+                android:src="@drawable/okiniiri"
+                android:scaleType="fitCenter"
+                android:layout_weight="0.25"
+                android:layout_margin="0.05dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="検索"
+                android:id="@+id/bt_search_setting"
+                android:layout_gravity="center"
+                android:background="#993399"
+                android:src="@drawable/search"
+                android:scaleType="fitCenter"
+                android:layout_weight="0.25"
+                android:layout_margin="0.05dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="設定"
+                android:id="@+id/bt_setting_setting"
+                android:layout_gravity="center"
+                android:background="#993399"
+                android:src="@drawable/setting"
+                android:scaleType="fitCenter"
+                android:layout_weight="0.25"
+                android:layout_margin="0.05dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

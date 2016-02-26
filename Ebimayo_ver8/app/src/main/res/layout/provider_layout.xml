@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.2">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="New Text"
+            android:id="@+id/textView_title_provider"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:inputType="text" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/bt_title_provider"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.3">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/abc_btn_radio_to_on_mtrl_015"
+            android:layout_weight="0.5"
+            android:id="@+id/imageView_provider_register"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:weightSum="1">
+
+                <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_field_provider"
+                    android:layout_weight="0.5"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1" >
+
+                <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/spinner_school_provider"
+                    android:layout_weight="0.5"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1" >
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_place_provider"
+                    android:layout_gravity="center"
+                    android:inputType="text" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:id="@+id/bt_place_provider"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_gravity="center_horizontal">
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_week_provider"
+                    android:layout_gravity="center"
+                    android:inputType="text" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:id="@+id/bt_week_provider"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1" >
+
+                <Spinner
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/spinner_startTime_provider"
+                    android:layout_weight="0.41"
+                    android:spinnerMode="dialog" />
+
+                <Spinner
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/spinner_endTime_provider"
+                    android:layout_weight="0.41"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_member_provider"
+                    android:layout_gravity="center"
+                    android:inputType="text|number" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:id="@+id/bt_member_provider"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add_Event"
+            android:id="@+id/bt_event_provider"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:weightSum="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_mail_provider"
+            android:src="@drawable/ic_menu_compose"
+            android:layout_weight="0.9"
+            android:text="adress"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:background="#78d84ceb"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:inputType="text" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/bt_mail_provider"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bt_favoritetitle_provider_register"
+            android:layout_weight="0.1"
+            android:src="@drawable/abc_btn_rating_star_off_mtrl_alpha" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:weightSum="1" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="登録する"
+            android:id="@+id/bt_register_provider_register"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+    </LinearLayout>
+
+</LinearLayout>

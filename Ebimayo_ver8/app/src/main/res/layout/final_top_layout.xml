@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/top_layout"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/textView_titleBar_top"
+        android:layout_weight="0.1"
+        android:background="#482760" />
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/calendarView_top"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.52" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="event"
+        android:textSize="20sp"
+        android:textColor="#482760"
+        android:layout_weight="0.04"
+        android:id="@+id/textView_event_top" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/gridView_event_top"
+        android:layout_weight="0.24" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:id="@+id/layout_menu_top"
+        android:layout_weight="0.1">
+
+        <ImageButton
+            tools:ignore="UnusedAttribute"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/bt_calendar_top"
+            android:background="#482760"
+            android:textAlignment="center"
+            android:layout_margin="0.05dp"
+            android:src="@drawable/calender"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.25" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/bt_favorite_top"
+            android:background="#482760"
+            android:layout_weight="0.25"
+            android:cropToPadding="false"
+            android:layout_margin="0.05dp"
+            android:src="@drawable/okiniiri"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/bt_search_top"
+            android:background="#482760"
+            android:layout_weight="0.25"
+            android:layout_margin="0.05dp"
+            android:src="@drawable/search"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/bt_setting_top"
+            android:background="#482760"
+            android:layout_weight="0.25"
+            android:layout_margin="0.05dp"
+            android:src="@drawable/setting"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+</LinearLayout>

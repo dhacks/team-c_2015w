@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.26">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/okiniiritopbar"
+                android:layout_gravity="center_horizontal"
+                android:background="#993399"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:layout_weight="0.72">
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridView_title_favorite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="82dp"
+                android:text="カレンダー"
+                android:id="@+id/bt_calendar_favorite"
+                android:layout_gravity="center"
+                android:background="#993399"
+                android:src="@drawable/calender"
+                android:scaleType="fitCenter"
+                android:layout_weight="0.25"
+                android:layout_margin="0.05dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="82dp"
+                android:text="お気に入り"
+                android:id="@+id/bt_favorite_favorite"
+                android:layout_gravity="center"
+                android:background="#993399"
+                android:src="@drawable/okiniiri"
+                android:scaleType="fitCenter"
+                android:layout_weight="0.25"
+                android:layout_margin="0.05dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="82dp"
+                android:text="検索"
+                android:id="@+id/bt_search_favorite"
+                android:layout_gravity="center"
+                android:background="#993399"
+                android:src="@drawable/search"
+                android:scaleType="fitCenter"
+                android:layout_weight="0.25"
+                android:layout_margin="0.05dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="82dp"
+                android:text="設定"
+                android:id="@+id/bt_setting_favorite"
+                android:layout_gravity="center"
+                android:background="#993399"
+                android:src="@drawable/setting"
+                android:scaleType="fitCenter"
+                android:layout_weight="0.25"
+                android:layout_margin="0.05dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.takaki.ebimayo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/topicon2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="Common"
+        >
+        <activity
+            android:name=".Top_Activity"
+            android:label="Top_Activity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".About_Activity"
+            android:label="About_Activity">
+        </activity>
+        <activity
+            android:name=".Favorite_Activity"
+            android:label="Favorite_Activity">
+        </activity>
+        <activity
+            android:name=".Profile_Activity"
+            android:label="Profile_Activity">
+            </activity>
+        <activity
+            android:name=".Search_Activity"
+            android:label="Search_Activity">
+        </activity>
+        <activity
+            android:name=".Setting_Activity"
+            android:label="Setting_Activity">
+        </activity>
+        <activity
+            android:name=".Provider_Activity"
+            android:label="Provider_Activity">
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月曜日"
+                android:id="@+id/cb_monday"
+                android:checked="false"
+                android:gravity="center"
+                android:allowUndo="false"
+                android:layout_gravity="center" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="火曜日"
+                android:id="@+id/cb_tuesday"
+                android:checked="false"
+                android:layout_gravity="center" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="水曜日"
+                android:id="@+id/cb_wednesday"
+                android:checked="false"
+                android:layout_gravity="center" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="木曜日"
+                android:id="@+id/cb_thursday"
+                android:checked="false"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金曜日"
+                android:id="@+id/cb_friday"
+                android:checked="false"
+                android:layout_gravity="center|left" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="土曜日"
+                android:id="@+id/cb_saturday"
+                android:checked="false"
+                android:layout_gravity="center|left" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日曜日"
+                android:id="@+id/cb_sunday"
+                android:checked="false"
+                android:layout_gravity="center|left" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
