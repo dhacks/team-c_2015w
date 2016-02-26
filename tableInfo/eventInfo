@@ -1,0 +1,8 @@
+event_id(auto increment)
+circle_id
+month
+day
+start_time
+event_place
+event_name
+comment
